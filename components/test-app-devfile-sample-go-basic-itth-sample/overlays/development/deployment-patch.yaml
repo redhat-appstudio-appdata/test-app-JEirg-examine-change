@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-app-devfile-sample-go-basic-itth-sample
+  namespace: gazarenk-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:894a3f01074b7487051bbe28a3c8fc65ba7c65ea76d60c598b9263f02e17d7bc
+        name: container-image
+        resources: {}
+status: {}
